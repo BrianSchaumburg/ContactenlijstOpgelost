@@ -8,6 +8,7 @@ import java.awt.*;
 import static org.junit.Assert.*;
 
 public class ContactTest {
+    //todo testen controleren
     Contact contact;
 
     @Before
@@ -15,7 +16,7 @@ public class ContactTest {
         contact = new Contact("ann.verelst@gmail.com", false);
     }
 
-    
+
     @Test
 
     public void test_OphogingMails_Geldig_Getal() {
