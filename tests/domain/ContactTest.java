@@ -15,12 +15,12 @@ public class ContactTest {
     }
 
     @Test
-    public void Test_OphogingMails_Geldig_Getal() {
+    public void test_OphogingMails_Geldig_Getal() {
         contact.ophogenOntvangenMails(10);
         assertEquals(10, contact.getOntvangenMails());
     }
 @Test(expected = IllegalArgumentException.class)
-public void Test_OphogingMails_Ongeldig_Getal()
+public void test_OphogingMails_Ongeldig_Getal()
 {
     contact.ophogenOntvangenMails(-2);
 }
