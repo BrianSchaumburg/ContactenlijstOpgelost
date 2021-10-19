@@ -11,8 +11,8 @@ public class Contact {
     }
 
     private void setEmail(String email) {
-        if(email.isBlank() && !this.email.contains("@") && !this.email.contains(".") )
-            throw new NullPointerException("Check de parameter");
+        if(email.isBlank() || !email.contains("@") || ! email.contains("."))
+            throw new IllegalArgumentException("Check de parameter");
         this.email = email;
     }
 

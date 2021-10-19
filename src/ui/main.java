@@ -21,6 +21,7 @@ public class main {
         System.out.println("Contact met het meest aantal verstuurde mails: " + lijst.meestVerstuurdeMails().getEmail());
 
         System.out.println("Aantal favorieten in de lijst: " + lijst.aantalFavorieten());
-
+        String mail = "brian.schaumburg@outlook.com";
+        System.out.println("Resultaat is " + mail.contains("aa"));
     }
 }
